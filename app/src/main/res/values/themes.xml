@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.ZCesConta" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/ces_white</item>
+        <item name="android:windowBackground">@color/ces_off_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

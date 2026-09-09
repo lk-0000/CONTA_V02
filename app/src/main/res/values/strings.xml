@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Z-CES CONTA</string>
+
+    <!-- First launch -->
+    <string name="onboarding_question">Kako naj vas aplikacija označuje?</string>
+    <string name="onboarding_hint">npr. Janez Novak</string>
+    <string name="onboarding_start">ZAČNI</string>
+
+    <!-- Projects -->
+    <string name="projects_title">PROJEKTI</string>
+    <string name="projects_add">+ DODAJ PROJEKT</string>
+    <string name="projects_add_manual">ROČNO</string>
+    <string name="projects_add_import_xml">UVOZI XML</string>
+    <string name="projects_add_import_zip">UVOZI PROJEKTNI ZIP</string>
+    <string name="projects_empty">Ni še nobenega projekta. Dodaj prvega.</string>
+
+    <!-- Project navigation -->
+    <string name="tab_today">DANES</string>
+    <string name="tab_all">VSE</string>
+    <string name="tab_boq">POPIS</string>
+    <string name="tab_gantt">GANTT</string>
+    <string name="tab_export">IZVOZ</string>
+
+    <!-- Project home actions -->
+    <string name="action_new_entry">+ NOV VNOS</string>
+    <string name="action_quick_photo">HITRA FOTO</string>
+    <string name="action_today">DANES</string>
+    <string name="action_gantt">GANTT</string>
+
+    <!-- New entry root choice -->
+    <string name="new_entry_choice_title">Nov vnos</string>
+    <string name="new_entry_choice_boq">POZICIJA IZ POPISA</string>
+    <string name="new_entry_choice_general">SPLOŠNO / DNEVNO</string>
+
+    <!-- Save -->
+    <string name="action_save">SHRANI</string>
+    <string name="action_edit">UREDI</string>
+    <string name="action_delete">IZBRIŠI</string>
+    <string name="action_share">DELI</string>
+</resources>

@@ -1,0 +1,29 @@
+Seveda. Iz logotipa so razvidne **tri osnovne barve**: oranžna, črna in bela. Pri analizi slike je glavna oranžna zelo jasno določljiva kot **#FF751F**. Sivi odtenki, ki se pojavljajo ob robovih črk, so predvsem posledica glajenja prikaza (anti-aliasing), zato jih ne bi obravnaval kot primarne barve znamke.
+
+| Vloga        | Barva      | HEX         | RGB           | Predlagana uporaba                                  |
+| ------------ | ---------- | ----------- | ------------- | --------------------------------------------------- |
+| **Primarna** | 🟧 Oranžna | **#FF751F** | 255, 117, 31  | poudarki, inicialke C/E/S, gumbi, grafični elementi |
+| **Primarna** | ⬛ Črna     | **#000000** | 0, 0, 0       | logotip, naslovi, glavno besedilo                   |
+| **Osnovna**  | ⬜ Bela     | **#FFFFFF** | 255, 255, 255 | ozadja, negativna različica logotipa                |
+
+Za širšo **celostno grafično podobo** bi iz teh barv sestavil še uporabno podporno paleto, ki ostaja zelo zvesta logotipu:
+
+| Barva            | HEX         | Namen                           |
+| ---------------- | ----------- | ------------------------------- |
+| **CES Orange**   | **#FF751F** | glavna brand barva              |
+| **Orange Dark**  | **#CC5D19** | hover stanja, temnejši poudarki |
+| **Orange Light** | **#FFB17F** | mehka ozadja, infografike       |
+| **Black**        | **#000000** | primarna tipografija            |
+| **Graphite**     | **#4B4B4B** | sekundarno besedilo             |
+| **Medium Grey**  | **#767676** | podpisi, pomožni elementi       |
+| **Light Grey**   | **#D0D0D0** | črte, okvirji, ločila           |
+| **Off White**    | **#F7F7F7** | alternativno svetlo ozadje      |
+| **White**        | **#FFFFFF** | glavno ozadje                   |
+
+Za **Construction Engineering Solutions** bi priporočal, da je razmerje pri uporabi približno **70 % bela/svetlo siva, 20 % črna/grafitna in 10 % oranžna**. Tako oranžna ostane prepoznaven poudarek in ne izgubi vizualne moči.
+
+Glavna barvna kombinacija bi bila torej:
+
+**#FF751F · #000000 · #FFFFFF**
+
+Če želiš, ti lahko pripravim tudi **profesionalen CES brand color sheet** z barvnimi kvadratki, HEX, RGB, CMYK in priporočili za tisk ter splet.

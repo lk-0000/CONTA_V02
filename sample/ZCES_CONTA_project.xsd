@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="zcesProject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="projectInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="location" type="xs:string" minOccurs="0"/>
+              <xs:element name="client" type="xs:string" minOccurs="0"/>
+              <xs:element name="startDate" type="xs:date" minOccurs="0"/>
+              <xs:element name="plannedFinish" type="xs:date" minOccurs="0"/>
+              <xs:element name="reportEmail" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="billOfQuantities" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="section" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="subsection" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="position" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="package" type="xs:string" minOccurs="0"/>
+                                <xs:element name="positionCode" type="xs:string"/>
+                                <xs:element name="subpositionCode" type="xs:string" minOccurs="0"/>
+                                <xs:element name="description" type="xs:string"/>
+                                <xs:element name="unit" type="xs:string" minOccurs="0"/>
+                                <xs:element name="contractQuantity" type="xs:decimal" minOccurs="0"/>
+                                <xs:element name="unitPrice" type="xs:decimal" minOccurs="0"/>
+                                <xs:element name="contractValue" type="xs:decimal" minOccurs="0"/>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="code" type="xs:string" use="required"/>
+                        <xs:attribute name="name" type="xs:string" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="code" type="xs:string" use="required"/>
+                  <xs:attribute name="name" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="schedule" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="task" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="wbs" type="xs:string" minOccurs="0"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="start" type="xs:date"/>
+                    <xs:element name="finish" type="xs:date"/>
+                    <xs:element name="durationDays" type="xs:decimal" minOccurs="0"/>
+                    <xs:element name="milestone" type="xs:boolean" minOccurs="0"/>
+                    <xs:element name="predecessors" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="predecessor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="boqPosition" type="xs:string" minOccurs="0"/>
+                    <xs:element name="importedProgress" type="xs:decimal" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

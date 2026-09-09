@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Camera capture temp files, per-entry, before they're moved into app-controlled photo storage -->
+    <cache-path name="camera_capture" path="camera_capture/" />
+    <!-- Generated export/share packages (single entry, day, full project ZIPs) -->
+    <cache-path name="exports" path="exports/" />
+    <!-- Persisted photo storage referenced by Room EntryPhoto.relativePath -->
+    <files-path name="photos" path="photos/" />
+</paths>

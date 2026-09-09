@@ -1,0 +1,18 @@
+<resources>
+    <!-- From Barva.txt — Z-CES brand palette -->
+    <color name="ces_orange">#FF751F</color>
+    <color name="ces_orange_dark">#CC5D19</color>
+    <color name="ces_orange_light">#FFB17F</color>
+    <color name="ces_black">#000000</color>
+    <color name="ces_graphite">#4B4B4B</color>
+    <color name="ces_medium_grey">#767676</color>
+    <color name="ces_light_grey">#D0D0D0</color>
+    <color name="ces_off_white">#F7F7F7</color>
+    <color name="ces_white">#FFFFFF</color>
+
+    <!-- Safety-yellow accent, restrained use only (per PROJECT_CONTEXT UX conventions) -->
+    <color name="safety_yellow">#F5C400</color>
+
+    <!-- Semantic navy used for primary text per spec ("dark/navy text") -->
+    <color name="navy_text">#12213A</color>
+</resources>

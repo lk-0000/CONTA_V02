@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zcesProject version="1.0">
+  <projectInfo>
+    <code>26_24</code>
+    <name>NAMA Ljubljana</name>
+    <location>Ljubljana</location>
+    <client>NAMA</client>
+    <startDate>2026-09-01</startDate>
+    <plannedFinish>2026-11-30</plannedFinish>
+  </projectInfo>
+
+  <billOfQuantities>
+    <section code="B" name="OBRTNA DELA">
+      <subsection code="b.3" name="ALU FASADERSKA DELA">
+        <position id="NAMA-PAS-B3-301-A">
+          <package>PASAZA</package>
+          <positionCode>3.01</positionCode>
+          <subpositionCode>a</subpositionCode>
+          <description>Material - plošče Alucobond, metalic colours Bronze Metallic 504</description>
+          <unit>m2</unit>
+          <contractQuantity>320</contractQuantity>
+          <unitPrice>119</unitPrice>
+          <contractValue>38080</contractValue>
+        </position>
+        <position id="NAMA-PAS-B3-301-B">
+          <package>PASAZA</package>
+          <positionCode>3.01</positionCode>
+          <subpositionCode>b</subpositionCode>
+          <description>Obdelava / formatiranje, dobava in montaža</description>
+          <unit>m2</unit>
+          <contractQuantity>232</contractQuantity>
+          <unitPrice>210</unitPrice>
+          <contractValue>48720</contractValue>
+        </position>
+        <position id="NAMA-NAD-B3-301-A">
+          <package>NADSTRESEK</package>
+          <positionCode>3.01</positionCode>
+          <subpositionCode>a</subpositionCode>
+          <description>Material - plošče Alucobond, natur AL Reflect št. 405</description>
+          <unit>m2</unit>
+          <contractQuantity>205</contractQuantity>
+          <unitPrice>145</unitPrice>
+          <contractValue>29725</contractValue>
+        </position>
+        <position id="NAMA-NAD-B3-301-B">
+          <package>NADSTRESEK</package>
+          <positionCode>3.01</positionCode>
+          <subpositionCode>b</subpositionCode>
+          <description>Obdelava / formatiranje, dobava in montaža</description>
+          <unit>m2</unit>
+          <contractQuantity>185.6</contractQuantity>
+          <unitPrice>210</unitPrice>
+          <contractValue>38976</contractValue>
+        </position>
+      </subsection>
+    </section>
+  </billOfQuantities>
+
+  <!-- Gantt tasks below are illustrative examples for testing the app UI.
+       They were not taken from a supplied source Gantt file. -->
+  <schedule>
+    <task id="T100">
+      <wbs>3.2.1</wbs>
+      <name>Montaža ALU podkonstrukcije - pasaža</name>
+      <start>2026-09-01</start>
+      <finish>2026-09-10</finish>
+      <durationDays>10</durationDays>
+      <milestone>false</milestone>
+    </task>
+    <task id="T110">
+      <wbs>3.2.2</wbs>
+      <name>Montaža ACP obloge - pasaža</name>
+      <start>2026-09-11</start>
+      <finish>2026-09-30</finish>
+      <durationDays>20</durationDays>
+      <milestone>false</milestone>
+      <predecessors>
+        <predecessor>T100</predecessor>
+      </predecessors>
+      <boqPosition>NAMA-PAS-B3-301-B</boqPosition>
+    </task>
+    <task id="T200">
+      <wbs>3.3.1</wbs>
+      <name>Montaža ACP obloge - nadstrešek</name>
+      <start>2026-10-01</start>
+      <finish>2026-10-20</finish>
+      <durationDays>20</durationDays>
+      <milestone>false</milestone>
+      <boqPosition>NAMA-NAD-B3-301-B</boqPosition>
+    </task>
+    <task id="M900">
+      <wbs>9</wbs>
+      <name>Predaja</name>
+      <start>2026-11-30</start>
+      <finish>2026-11-30</finish>
+      <durationDays>0</durationDays>
+      <milestone>true</milestone>
+    </task>
+  </schedule>
+</zcesProject>
